@@ -2,8 +2,8 @@
 @import url(reset.css);
 
 html, body{
-	width:100%;
-	height:100%;
+	width: 100%;
+	height: 100%;
 }
 
 body, h1, h2, p{
@@ -24,69 +24,69 @@ p{
 }
 
 .navigation{
-	position:fixed;
-	z-index:1;
-	top:20px;
+	position: fixed;
+	z-index: 1;
+	top: 20px;
 }
 
 .navigation li{
-	color:#FFFFFF;
-	display:block;
+	color: #FFFFFF;
+	display: block;
 	padding: 0 10px;
-	line-height:30px;
-	margin-bottom:2px;
+	line-height: 30px;
+	margin-bottom: 2px;
 	font-weight:bold;
 	-webkit-transition: all .2s ease-in-out;
-	border-bottom:1px solid #FFFFFF;
-	text-align:left;
-	width:53px;
+	border-bottom: 1px solid #FFFFFF;
+	text-align: left;
+	width: 53px;
 }
 
 .navigation li:hover,.active{
-	font-size:25px;
-	cursor:pointer;
-	width:100px!important;
+	font-size: 25px;
+	cursor: pointer;
+	width: 100px!important;
 }
 
 
 .slide{
 	background-attachment: fixed;
-	width:100%;
-	height:100%;
+	width: 100%;
+	height: 100%;
 	position: relative;
-	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
+	box-shadow: inset 0px 10px 10px rgba(0,0,0,0.3);
 }
 
 .wrapper{
-	width:960px;
-	height:200px;
-	margin:0 auto;
-	position:relative;
+	width: 960px;
+	height: 200px;
+	margin: 0 auto;
+	position: relative;
 }
 
 .slideno{
-	position:absolute;
-	bottom:0px;
-	left:0px;
-	font-size:100px;
-	font-weight:bold;
-	color:rgba(255,255,255,0.3);
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	font-size: 100px;
+	font-weight: bold;
+	color: rgba(255,255,255,0.3);
 }
 
 .button{
-	display:block;
-	width:50px;
-	height:50px;
-	position:absolute;
-	bottom:0px;
-	left:50%;
-	background-color:#333333;
-	background-image:url(../images/arrow.png);
+	display: block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	background-color: #333333;
+	background-image: url(../images/arrow.png);
 }
 
 .button:hover{
-	background-color:#494949;
-	cursor:pointer;
+	background-color: #494949;
+	cursor: pointer;
 }
 
 /******************************
@@ -109,21 +109,14 @@ p{
 	height: 100%;
 }
 
-#profile{
-	width: 100px;
-	border-radius: 50%;
-}
-
 #title{
 	background-image: url(../images/umbrella2.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 90%;
-	/*background-color: white;*/
 	padding: 50px;
 	padding-top: 100px;
 	padding-bottom: 100px;
-	/*border-radius: 50%;*/
 	color: black;
 	text-align: center;
 	position: absolute;
@@ -131,7 +124,7 @@ p{
 	left: 15em;
 }
 
-#content{
+#title-content{
 	padding-top: 3em;
 	padding-bottom: 1em;
 	color: #F5F5F5;
@@ -151,64 +144,61 @@ p{
 *******************************/
 #slide2{
 	background-image: url(../images/UW2.png);
-	background-position: 0% 400%;
+	background-position: 0 15em;
 	background-repeat: no-repeat;
 	background-color: black;
-	background-size: 75%;
+	background-size: contain;
+}
 
+.slide2-content{
+	position: absolute;
+	top: 5em;
+	left: 40em;
 
 }
-#slide2 img:first-child{
-	position:absolute;
-	top: 700px;
-	left: -150px;
+
+.slide2-text{
+	height: 450px;
+	width: 400px;
+	position: absolute;
+	top: 10em;
+	left: 2em;
+	color: #F5F5F5;
 }
-#slide2 img:nth-child(2){
-	position:absolute;
-	top:300px;
-	left:100px;
+
+.slide2-screen{
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 450px;
+	height: 450px;
+	background-image: url(../images/INFO.png);
+	background-repeat: no-repeat;
+	background-color: white;
+	opacity: 0.2;
+	filter: alpha(opacity=50);
 }
-#slide2 img:nth-child(3){
-	position:absolute;
-	top:600px;
-	left:300px;
+
+#profile{
+	position: absolute;
+	top: 8em;
+	left: 6em;
+	border-radius: 50%;
+	height: 15em;
 }
-#slide2 img:nth-child(4){
-	position:absolute;
-	top:400px;
-	left:300px;
-}
-#slide2 img:nth-child(5){
-	position:absolute;
-	top:600px;
-	right:300px;
-}
-#slide2 img:nth-child(6){
-	position:absolute;
-	top:600px;
-	right:300px;
-}
-#slide2 img:nth-child(7){
-	position:absolute;
-	top:400px;
-	right:100px;
-}
-#slide2 img:nth-child(8){
-	position:absolute;
-	top:100px;
-	right:300px;
-}
+
 /******************************
  SLIDE 3 
 *******************************/
 #slide3{
-	background-image: url(../images/tetris.jpg);
+	background-image: url(../images/lamp.png);
 	background-size: 100%;
 }
 #slide3 img:first-child{
 	position:absolute;
-top: 700px;
-left: 300px;
+	top: 700px;
+	left: 300px;
 }
 #slide3 img:nth-child(2){
 	position:absolute;
