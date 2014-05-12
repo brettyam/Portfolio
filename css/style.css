@@ -103,10 +103,21 @@ p{
 	background-size: cover;
 }
 
+@-webkit-keyframes slide {
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 0 320px;
+    }
+}
+
 #rain{
 	background-image: url(../images/rain4.png);
 	width: 100%;
 	height: 100%;
+	-webkit-animation: slide 4s linear infinite;
+
 }
 
 #title{
@@ -131,12 +142,12 @@ p{
 }
 
 #home-footer1{
-	font-size: 50px;
-	bottom: 60px;
+	font-size: 40px;
+	bottom: 50px;
 }
 
 #home-footer2{
-	font-size: 50px;
+	font-size: 40px;
 }
 
 /******************************
