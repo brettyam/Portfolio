@@ -116,7 +116,7 @@ p{
 	background-image: url(../images/rain4.png);
 	width: 100%;
 	height: 100%;
-	-webkit-animation: slide 4s linear infinite;
+	/*-webkit-animation: slide 4s linear infinite;*/
 
 }
 
@@ -155,10 +155,10 @@ p{
 *******************************/
 #slide2{
 	background-image: url(../images/UW2.png);
-	background-position: 0 15em;
+	background-position: 0 10em;
 	background-repeat: no-repeat;
 	background-color: black;
-	background-size: contain;
+	background-size: cover;
 }
 
 .slide2-content{
@@ -188,7 +188,6 @@ p{
 	background-repeat: no-repeat;
 	background-color: white;
 	opacity: 0.2;
-	filter: alpha(opacity=50);
 }
 
 #profile{
@@ -204,44 +203,96 @@ p{
 *******************************/
 #slide3{
 	background-image: url(../images/lamp.png);
-	background-size: 100%;
+	background-repeat: no-repeat;
+	background-color: #8898BF;
+	background-size: cover;
 }
-#slide3 img:first-child{
-	position:absolute;
-	top: 700px;
-	left: 300px;
+
+#grid{
+	position: absolute;
+	left: 35em;
+	top: 5em;
 }
-#slide3 img:nth-child(2){
-	position:absolute;
-	top:100px;
-	left:100px;
+
+.proj-thumbnail{
+	width: 250px;
+	padding: 20px;
+	opacity: 0.5;
+
+	-webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+  	transition: opacity 0.4s ease-in-out;
 }
-#slide3 img:nth-child(3){
-	position:absolute;
-	top:150px;
-	left:300px;
+
+.proj-desc{
+	position: absolute;
+	width: 30em;
+	opacity: 0.0;
+
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+  	transition: opacity 0.4s ease-in-out;
 }
-#slide3 img:nth-child(4){
-	position:absolute;
-	top:450px;
-	left:300px;
+
+#desc1{
+	right: 280px;
 }
-#slide3 img:nth-child(5){
-	position:absolute;
-	top:200px;
-	right:300px;
+
+#desc2{
+	right: 530px;
 }
-#slide3 img:nth-child(6){
-	position:absolute;
-	top:100px;
-	right:300px;
+
+#desc3{
+	right: 280px;
+	top: 0px;
 }
+
+#desc4{
+	right: 530px;
+	top: 0px;
+}
+
+#desc5{
+	right: 280px;
+	top: -158px;
+}
+
+#desc6{
+	right: 530px;
+	top: -158px;
+}
+
+#thumb1:hover, #thumb2:hover,
+#thumb3:hover, #thumb4:hover,
+#thumb5:hover, #thumb6:hover{
+	opacity: 1.0;
+
+	-webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+  	transition: opacity 0.4s ease-in-out;
+}
+
+#thumb1:hover + #desc1, #thumb2:hover + #desc2,
+#thumb3:hover + #desc3, #thumb4:hover + #desc4,
+#thumb5:hover + #desc5, #thumb6:hover + #desc6{
+	opacity: 1.0;
+}
+
 /******************************
  SLIDE 4 
 *******************************/
 
 #slide4{
 	background-image:url(../images/coderain.jpg);
+	background-repeat: no-repeat;
+	background-color: #354B70;
+
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
