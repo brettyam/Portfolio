@@ -81,7 +81,7 @@ p{
 	bottom: 0px;
 	left: 50%;
 	background-color: #333333;
-	background-image: url(../images/arrow.png);
+	background-image: url(../img/arrow.png);
 }
 
 .button:hover{
@@ -93,9 +93,10 @@ p{
  SLIDE 1 
 *******************************/
 #slide1{
-	background-image: url(../images/homebackground.jpg);
+	background-image: url(../img/slide1/homebackground.jpg);
 	background-repeat: no-repeat;
 	background-color: #666769;
+	z-index: 1;
 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -113,7 +114,7 @@ p{
 }
 
 #rain{
-	background-image: url(../images/rain4.png);
+	background-image: url(../img/slide1/rain4.png);
 	width: 100%;
 	height: 100%;
 	/*-webkit-animation: slide 4s linear infinite;*/
@@ -121,7 +122,7 @@ p{
 }
 
 #title{
-	background-image: url(../images/umbrella2.png);
+	background-image: url(../img/slide1/umbrella2.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 90%;
@@ -154,11 +155,12 @@ p{
  SLIDE 2 
 *******************************/
 #slide2{
-	background-image: url(../images/UW2.png);
+	background-image: url(../img/slide2/UW2.png);
 	background-position: 0 10em;
 	background-repeat: no-repeat;
 	background-color: black;
 	background-size: cover;
+	z-index: 1;
 }
 
 .slide2-content{
@@ -184,7 +186,7 @@ p{
 	left: 0;
 	width: 450px;
 	height: 450px;
-	background-image: url(../images/INFO.png);
+	background-image: url(../img/slide2/INFO.png);
 	background-repeat: no-repeat;
 	background-color: white;
 	opacity: 0.2;
@@ -202,10 +204,11 @@ p{
  SLIDE 3 
 *******************************/
 #slide3{
-	background-image: url(../images/lamp.png);
+	background-image: url(../img/slide3/lamp.png);
 	background-repeat: no-repeat;
 	background-color: #8898BF;
 	background-size: cover;
+	z-index: 1;
 }
 
 #grid{
@@ -270,12 +273,6 @@ p{
 #thumb3:hover, #thumb4:hover,
 #thumb5:hover, #thumb6:hover{
 	opacity: 1.0;
-
-	-webkit-transition: opacity 0.4s ease-in-out;
-    -moz-transition: opacity 0.4s ease-in-out;
-    -o-transition: opacity 0.4s ease-in-out;
-    -ms-transition: opacity 0.4s ease-in-out;
-  	transition: opacity 0.4s ease-in-out;
 }
 
 #thumb1:hover + #desc1, #thumb2:hover + #desc2,
@@ -289,7 +286,7 @@ p{
 *******************************/
 
 #slide4{
-	background-image:url(../images/coderain.jpg);
+	background-image:url(../img/slide4/coderain.jpg);
 	background-repeat: no-repeat;
 	background-color: #354B70;
 
@@ -298,11 +295,39 @@ p{
 	-o-background-size: cover;
 	background-size: cover;
 }
+
 #slide4 .parallaxbg{
-	position:absolute;
-	right:40px;
-	top:40px;
-	font-size:28px;
-	color:rgba(51,51,51,0.3);
+	position: absolute;
+	right: 40px;
+	top: 40px;
+	font-size: 28px;
+	color: rgba(51,51,51,0.3);
 }
+
+.icon-content{
+	position: fixed;
+	top: 15%;
+	width: inherit;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.contact-icon{
+	margin: 30px;
+	height: 64px;
+	opacity: 0.5;
+
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease; 
+}
+
+.contact-icon:hover{
+	opacity: 1.0;
+}
+
+
+
 
