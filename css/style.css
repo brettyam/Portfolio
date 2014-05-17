@@ -25,7 +25,7 @@ p{
 
 .navigation{
 	position: fixed;
-	z-index: 1;
+	z-index: 4;
 	top: 20px;
 }
 
@@ -96,12 +96,8 @@ p{
 	background-image: url(../img/slide1/homebackground.jpg);
 	background-repeat: no-repeat;
 	background-color: #666769;
-	z-index: 1;
-
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
+	z-index: 3;
 }
 
 @-webkit-keyframes slide {
@@ -117,7 +113,7 @@ p{
 	background-image: url(../img/slide1/rain4.png);
 	width: 100%;
 	height: 100%;
-	/*-webkit-animation: slide 4s linear infinite;*/
+	/*-webkit-animation: slide 2s linear infinite;*/
 
 }
 
@@ -156,18 +152,17 @@ p{
 *******************************/
 #slide2{
 	background-image: url(../img/slide2/UW2.png);
-	background-position: 0 10em;
+	background-position: bottom;
 	background-repeat: no-repeat;
 	background-color: black;
 	background-size: cover;
-	z-index: 1;
+	z-index: 3;
 }
 
 .slide2-content{
 	position: absolute;
 	top: 5em;
 	left: 40em;
-
 }
 
 .slide2-text{
@@ -208,20 +203,21 @@ p{
 	background-repeat: no-repeat;
 	background-color: #8898BF;
 	background-size: cover;
-	z-index: 1;
+	z-index: 2;
 }
 
 #grid{
 	position: absolute;
-	left: 35em;
-	top: 5em;
+	left: 50%;
+	top: 50%;
 }
 
 .proj-thumbnail{
+	height: 170px;
 	width: 250px;
 	padding: 20px;
 	opacity: 0.5;
-
+	
 	-webkit-transition: opacity 0.4s ease-in-out;
     -moz-transition: opacity 0.4s ease-in-out;
     -o-transition: opacity 0.4s ease-in-out;
@@ -230,8 +226,12 @@ p{
 }
 
 .proj-desc{
-	position: absolute;
-	width: 30em;
+	position: fixed;
+	top: 15%;
+	left: 10%;
+	width: 37%;
+	color: black;
+	pointer-events: none;
 	opacity: 0.0;
 
     -webkit-transition: opacity 0.4s ease-in-out;
@@ -241,43 +241,11 @@ p{
   	transition: opacity 0.4s ease-in-out;
 }
 
-#desc1{
-	right: 280px;
-}
-
-#desc2{
-	right: 530px;
-}
-
-#desc3{
-	right: 280px;
-	top: 0px;
-}
-
-#desc4{
-	right: 530px;
-	top: 0px;
-}
-
-#desc5{
-	right: 280px;
-	top: -158px;
-}
-
-#desc6{
-	right: 530px;
-	top: -158px;
-}
-
-#thumb1:hover, #thumb2:hover,
-#thumb3:hover, #thumb4:hover,
-#thumb5:hover, #thumb6:hover{
+.proj-thumbnail:hover{
 	opacity: 1.0;
 }
 
-#thumb1:hover + #desc1, #thumb2:hover + #desc2,
-#thumb3:hover + #desc3, #thumb4:hover + #desc4,
-#thumb5:hover + #desc5, #thumb6:hover + #desc6{
+.proj-thumbnail:hover + .proj-desc{
 	opacity: 1.0;
 }
 
@@ -289,11 +257,8 @@ p{
 	background-image:url(../img/slide4/coderain.jpg);
 	background-repeat: no-repeat;
 	background-color: #354B70;
-
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
+	z-index: 1;
 }
 
 #slide4 .parallaxbg{
@@ -308,14 +273,21 @@ p{
 	position: fixed;
 	top: 15%;
 	width: inherit;
-	margin: 0 auto;
 	text-align: center;
 }
 
-.contact-icon{
+.contact-item{
 	margin: 30px;
+	display: inline-block;
+}
+
+.contact-item a{
+	text-decoration: none;
+}
+
+.contact-icon{
 	height: 64px;
-	opacity: 0.5;
+	opacity: 0.4;
 
 	-webkit-transition: all 0.2s ease;
 	-moz-transition: all 0.2s ease;
@@ -324,9 +296,25 @@ p{
 	transition: all 0.2s ease; 
 }
 
-.contact-icon:hover{
+.contact-caption{
+	opacity: 0.0;
+	padding-top: 3px;
+	color: black;
+	font-weight: bold;
+	pointer-events: none;
+
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease; 
+}
+
+.contact-icon:hover, .contact-icon:hover + .contact-caption{
 	opacity: 1.0;
 }
+
+
 
 
 
