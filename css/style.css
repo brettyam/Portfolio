@@ -208,7 +208,7 @@ p{
 
 #grid{
 	position: absolute;
-	left: 50%;
+	left: 53%;
 	top: 50%;
 }
 
@@ -217,7 +217,8 @@ p{
 	width: 250px;
 	padding: 20px;
 	opacity: 0.5;
-	
+	border-radius: 25px;
+
 	-webkit-transition: opacity 0.4s ease-in-out;
     -moz-transition: opacity 0.4s ease-in-out;
     -o-transition: opacity 0.4s ease-in-out;
@@ -225,27 +226,37 @@ p{
   	transition: opacity 0.4s ease-in-out;
 }
 
-.proj-desc{
-	position: fixed;
-	top: 15%;
-	left: 10%;
-	width: 37%;
-	color: black;
+.proj-info{
 	pointer-events: none;
+	color: black;
 	opacity: 0.0;
 
-    -webkit-transition: opacity 0.4s ease-in-out;
+	-webkit-transition: opacity 0.4s ease-in-out;
     -moz-transition: opacity 0.4s ease-in-out;
     -o-transition: opacity 0.4s ease-in-out;
     -ms-transition: opacity 0.4s ease-in-out;
   	transition: opacity 0.4s ease-in-out;
 }
 
+.proj-title{
+	position: fixed;
+	top: 12%;
+	left: 13%;
+	font-weight: bold;
+}
+
+.proj-desc{
+	position: fixed;
+	top: 15%;
+	left: 12%;
+	width: 37%;
+}
+
 .proj-thumbnail:hover{
 	opacity: 1.0;
 }
 
-.proj-thumbnail:hover + .proj-desc{
+.proj-thumbnail:hover + .proj-info{
 	opacity: 1.0;
 }
 
