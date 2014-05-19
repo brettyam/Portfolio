@@ -55,6 +55,7 @@ p{
 	height: 100%;
 	position: relative;
 	box-shadow: inset 0px 10px 10px rgba(0,0,0,0.3);
+	min-width: 1100px;       /*???*/
 }
 
 .wrapper{
@@ -151,7 +152,7 @@ p{
 *******************************/
 #slide2{
 	background-image: url(../img/slide2/UW2.png);
-	background-position: bottom;
+	background-position: 0 10em;
 	background-repeat: no-repeat;
 	background-color: #000000;
 	background-size: cover;
@@ -168,6 +169,7 @@ p{
 	height: 450px;
 	width: 400px;
 	position: absolute;
+	text-align: center;
 	top: 10em;
 	left: 2em;
 	color: #F5F5F5;
@@ -189,9 +191,10 @@ p{
 #profile{
 	position: absolute;
 	top: 5em;
-	left: 6em;
+	left: 2em;
 	border-radius: 50%;
-	height: 20em;
+	height: 16em;
+	border: 2px solid #EEEEEE;
 }
 
 /******************************
@@ -200,7 +203,6 @@ p{
 #slide3{
 	background-image: url(../img/slide3/lamp.png);
 	background-repeat: no-repeat;
-	background-position: 0 50%;
 	background-color: #8898BF;
 	background-size: cover;
 	z-index: 2;
@@ -349,12 +351,3 @@ p{
 .contact-icon:hover, .contact-icon:hover + .contact-caption{
 	opacity: 1.0;
 }
-
-@media screen and (max-width: 501px) {
-
-}
-
-
-
-
-
